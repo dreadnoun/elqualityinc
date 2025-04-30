@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="apply_title">Apply Now - EL Quality Inc</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html" data-translate="nav_home">EL Quality Inc</a> <!-- Placeholder, maybe replace with logo img later -->
+            </div>
+            <ul>
+                <li><a href="index.html" data-translate="nav_home">Home</a></li>
+                <li><a href="about.html" data-translate="nav_about">About Us</a></li>
+                <li><a href="services.html" data-translate="nav_services">Services</a></li>
+                <li><a href="apply.html" data-translate="nav_apply" class="active">Apply Now</a></li> <!-- Added active class -->
+                <li><a href="contact.html" data-translate="nav_contact">Contact</a></li>
+            </ul>
+            <div class="language-switcher">
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="uz">Oʻzbekcha</option>
+                    <option value="ru">Русский</option>
+                    <option value="es">Español</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-section bg-light">
+            <div class="container">
+                <h1 data-translate="apply_heading">Driver Application</h1>
+                <p data-translate="apply_intro">Interested in joining the El Quality Inc team as an owner-operator? Please fill out the application form below. We require a minimum of 2 years of driving experience.</p>
+
+                <form id="driver-application-form">
+                    <h2 data-translate="apply_section_personal">Personal Information</h2>
+                    <label for="app_name" data-translate="apply_form_name_label">Full Name:</label>
+                    <input type="text" id="app_name" name="name" required>
+
+                    <label for="app_email" data-translate="apply_form_email_label">Email Address:</label>
+                    <input type="email" id="app_email" name="email" required>
+
+                    <label for="app_phone" data-translate="apply_form_phone_label">Phone Number:</label>
+                    <input type="tel" id="app_phone" name="phone" required>
+
+                    <label for="app_address" data-translate="apply_form_address_label">Full Address:</label>
+                    <input type="text" id="app_address" name="address" required>
+
+                    <h2 data-translate="apply_section_experience">Driving Experience</h2>
+                    <label for="app_experience" data-translate="apply_form_experience_label">Years of Commercial Driving Experience:</label>
+                    <input type="number" id="app_experience" name="experience" min="2" required>
+
+                    <label for="app_license_type" data-translate="apply_form_license_type_label">CDL Class:</label>
+                    <input type="text" id="app_license_type" name="license_type" placeholder="e.g., Class A" required>
+
+                    <label for="app_license_state" data-translate="apply_form_license_state_label">State of CDL Issuance:</label>
+                    <input type="text" id="app_license_state" name="license_state" required>
+
+                    <label for="app_endorsements" data-translate="apply_form_endorsements_label">Endorsements (Optional):</label>
+                    <input type="text" id="app_endorsements" name="endorsements" placeholder="e.g., Hazmat, Tanker">
+
+                    <label for="app_accidents" data-translate="apply_form_accidents_label">Accidents/Violations in the last 3 years:</label>
+                    <textarea id="app_accidents" name="accidents" rows="3" required></textarea>
+
+                    <h2 data-translate="apply_section_equipment">Equipment (Owner-Operators)</h2>
+                    <label for="app_equipment_type" data-translate="apply_form_equipment_type_label">Type of Truck/Trailer:</label>
+                    <input type="text" id="app_equipment_type" name="equipment_type" placeholder="e.g., Dry Van, Flatbed">
+
+                    <label for="app_equipment_year" data-translate="apply_form_equipment_year_label">Year of Equipment:</label>
+                    <input type="number" id="app_equipment_year" name="equipment_year" min="1990" max="2025">
+<br>
+                    <h2 data-translate="apply_section_additional">Additional Information</h2>
+                    <label for="app_message" data-translate="apply_form_message_label">Why do you want to work with El Quality Inc? (Optional):</label>
+                    <textarea id="app_message" name="message" rows="4"></textarea>
+
+                    <!-- Add file upload for documents later if needed -->
+                    <!-- <label for="app_documents" data-translate="apply_form_documents_label">Upload Documents (CDL, Medical Card - Optional):</label> -->
+                    <!-- <input type="file" id="app_documents" name="documents" multiple> -->
+
+                    <button type="submit" class="btn" data-translate="apply_form_submit_btn">Submit Application</button>
+                </form>
+                <p id="application-status"></p> <!-- To display success/error messages -->
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3 data-translate="footer_contact_heading">Contact Information</h3>
+                <p data-translate="footer_phone_label">Tel:</p>
+                <p>513-694-0050</p>
+                <p>513-713-9398</p>
+                <p data-translate="footer_safety_dept_label">Driver & Safety Dept:</p>
+                <p>888-445-1101</p>
+                <p data-translate="footer_email_label">Email:</p>
+                <p><a href="mailto:Elquality.safety@gmail.com">elquality.safety@gmail.com</a></p>
+                <p data-translate="footer_address_label">Address:</p>
+                <p>2575 US-22 Suite # 1, Maineville, OH 45039</p>
+            </div>
+            <div class="quick-links">
+                 <h3 data-translate="footer_quick_links">Quick Links</h3>
+                 <ul>
+                    <li><a href="index.html" data-translate="nav_home">Home</a></li>
+                    <li><a href="about.html" data-translate="nav_about">About Us</a></li>
+                    <li><a href="services.html" data-translate="nav_services">Services</a></li>
+                    <li><a href="apply.html" data-translate="nav_apply">Apply Now</a></li>
+                    <li><a href="contact.html" data-translate="nav_contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p data-translate="footer_copyright">&copy; 2025 EL Quality Inc. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/es.json"></script>
+    <script src="js/ru.json"></script>
+    <script src="js/uz.json"></script>
+    <script src="js/en.json"></script>
+    <script src="js/script.js"></script>
+    <!-- Add script for application form handling later -->
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="contact_title">Contact Us - El Quality Inc</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html" data-translate="nav_home">EL Quality Inc</a> <!-- Placeholder, maybe replace with logo img later -->
+            </div>
+            <ul>
+                <li><a href="index.html" data-translate="nav_home">Home</a></li>
+                <li><a href="about.html" data-translate="nav_about">About Us</a></li>
+                <li><a href="services.html" data-translate="nav_services">Services</a></li>
+                <li><a href="apply.html" data-translate="nav_apply">Apply Now</a></li>
+                <li><a href="contact.html" data-translate="nav_contact" class="active">Contact</a></li> <!-- Added active class -->
+            </ul>
+            <div class="language-switcher">
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="uz">Oʻzbekcha</option>
+                    <option value="ru">Русский</option>
+                    <option value="es">Español</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-section bg-light">
+            <div class="container">
+                <h1 data-translate="contact_heading">Contact EL Quality Inc</h1>
+                <img src="img/images.jfif" alt="Truck on mountain highway" class="content-image centered-image"> <!-- Added image -->
+                <p data-translate="contact_intro">We'd love to hear from you! Whether you're an owner-operator looking for opportunities or a potential client, feel free to reach out using the form below or contact us directly.</p>
+
+                <div class="contact-details-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 30px;"> <!-- Added grid layout for contact details/form -->
+                    <div class="contact-info-main">
+                        <h2 data-translate="contact_info_heading">Our Contact Information</h2>
+                        <p><strong data-translate="footer_phone_label">Tel:</strong> 513-694-0050 / 513-713-9398</p>
+                        <p><strong data-translate="footer_safety_dept_label">Driver & Safety Dept:</strong> 888-445-1101</p>
+                        <p><strong data-translate="footer_email_label">Email:</strong> <a href="mailto:Elquality.safety@gmail.com">elquality.safety@gmail.com</a></p>
+                        <p><strong data-translate="footer_address_label">Address:</strong> 2575 US-22 Suite # 1, Maineville, OH 45039</p>
+                        <!-- Optional: Add a simple map embed here later if needed -->
+                    </div>
+                    <div class="contact-form">
+                        <h2 data-translate="contact_form_heading">Send Us a Message</h2>
+                        <form id="contact-form">
+                            <label for="name" data-translate="contact_form_name_label">Name:</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email" data-translate="contact_form_email_label">Email:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="phone" data-translate="contact_form_phone_label">Phone (Optional):</label>
+                            <input type="tel" id="phone" name="phone">
+
+                            <label for="subject" data-translate="contact_form_subject_label">Subject:</label>
+                            <input type="text" id="subject" name="subject" required>
+
+                            <label for="message" data-translate="contact_form_message_label">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+
+                            <button type="submit" class="btn" data-translate="contact_form_submit_btn">Send Message</button>
+                        </form>
+                        <p id="form-status"></p> <!-- To display success/error messages -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3 data-translate="footer_contact_heading">Contact Information</h3>
+                <p data-translate="footer_phone_label">Tel:</p>
+                <p>513-694-0050</p>
+                <p>513-713-9398</p>
+                <p data-translate="footer_safety_dept_label">Driver & Safety Dept:</p>
+                <p>888-445-1101</p>
+                <p data-translate="footer_email_label">Email:</p>
+                <p><a href="mailto:Elquality.safety@gmail.com">elquality.safety@gmail.com</a></p>
+                <p data-translate="footer_address_label">Address:</p>
+                <p>2575 US-22 Suite # 1, Maineville, OH 45039</p>
+            </div>
+            <div class="quick-links">
+                 <h3 data-translate="footer_quick_links">Quick Links</h3>
+                 <ul>
+                    <li><a href="index.html" data-translate="nav_home">Home</a></li>
+                    <li><a href="about.html" data-translate="nav_about">About Us</a></li>
+                    <li><a href="services.html" data-translate="nav_services">Services</a></li>
+                    <li><a href="apply.html" data-translate="nav_apply">Apply Now</a></li>
+                    <li><a href="contact.html" data-translate="nav_contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p data-translate="footer_copyright">&copy; 2025 El Quality Inc. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/es.json"></script>
+    <script src="js/ru.json"></script>
+    <script src="js/uz.json"></script>
+    <script src="js/en.json"></script>
+    <script src="js/script.js"></script>
+    <!-- Add script for form handling later if needed -->
+</body>
+</html>

@@ -1,0 +1,481 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Arial', sans-serif; /* Modern, clean font */
+    line-height: 1.7;
+    color: #333;
+    background-color: #f8f9fa; /* Lighter background */
+}
+
+.container {
+    width: 90%; /* Wider container for content */
+    max-width: 1200px; /* Max width for large screens */
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px; /* Padding inside container */
+}
+
+/* Header Styling */
+header {
+    background: #2c3e50; /* Dark blue-grey header */
+    color: #ecf0f1; /* Light grey text */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: #f39c12 4px solid; /* Orange accent color */
+    position: sticky; /* Make header sticky */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    max-width: 1300px; /* Max width for nav */
+    margin: auto;
+}
+
+header .logo a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin-left: 25px;
+}
+
+header ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent; /* For hover effect */
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+header ul li a:hover,
+header ul li a.active /* Add class for active page */
+{
+    color: #f39c12; /* Accent color on hover/active */
+    border-bottom-color: #f39c12;
+}
+
+.language-switcher select {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #bdc3c7; /* Light border */
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    cursor: pointer;
+}
+
+/* Main Content Area */
+main {
+    padding: 40px 0;
+    min-height: calc(100vh - 250px); /* Adjust based on header/footer height */
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50; /* Dark blue-grey heading */
+    font-size: 2.5em;
+}
+
+main h2 {
+    color: #34495e; /* Slightly lighter blue-grey */
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+main p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    background: #f39c12; /* Accent color */
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #e67e22; /* Darker orange on hover */
+    transform: translateY(-2px);
+}
+
+/* Footer Styling */
+footer {
+    background: #2c3e50; /* Match header */
+    color: #bdc3c7; /* Lighter grey text */
+    padding: 40px 0 15px 0;
+    margin-top: 40px;
+    border-top: 4px solid #f39c12; /* Match header accent */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Space out columns */
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+    gap: 20px; /* Add gap between columns */
+}
+
+.footer-content div {
+    flex: 1;
+    padding: 0 15px;
+    min-width: 220px;
+}
+
+.footer-content h3 {
+    color: #ecf0f1; /* Light text for headings */
+    margin-bottom: 20px;
+    border-bottom: 1px solid #7f8c8d; /* Subtle border */
+    padding-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.footer-content p,
+.footer-content ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-content a {
+    color: #f39c12; /* Accent color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #ecf0f1; /* Lighter color on hover */
+    text-decoration: underline;
+}
+
+.footer-content ul {
+    list-style: none;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #34495e; /* Darker border */
+    font-size: 13px;
+    color: #7f8c8d; /* Muted copyright text */
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Add some basic form styling */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+form button {
+    /* Use .btn styles */
+}
+
+
+
+
+/* Hero Section (e.g., for Home Page) */
+.hero {
+    background: url('../img/hero_truck_mountain.jpeg') no-repeat center center/cover; /* Use downloaded image */
+    color: #fff;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative; /* For overlay */
+    margin-bottom: 40px; /* Space below hero */
+}
+
+.hero::before { /* Dark overlay for text readability */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44, 62, 80, 0.6); /* Use header color with alpha */
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2; /* Ensure content is above overlay */
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    color: #fff; /* Override main h1 color */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    font-size: 1.4em;
+    margin-bottom: 25px;
+    color: #ecf0f1; /* Lighter text */
+}
+
+/* General Content Sections */
+.content-section {
+    padding: 50px 0;
+    /* background-color: #fff; */ /* Removed default white, use body bg */
+    margin-bottom: 0; /* Remove margin, use padding */
+}
+
+.content-section.bg-light {
+     background-color: #fff; /* White background for specific sections */
+     border-top: 1px solid #e9ecef;
+     border-bottom: 1px solid #e9ecef;
+}
+
+.content-section.bg-grey {
+     background-color: #f8f9fa; /* Use body background color */
+}
+
+.content-section .container {
+     /* Container already handles width/padding */
+}
+
+.content-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2em;
+}
+
+/* Grid layout for features/services */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    background: #ffffff; /* White background for items */
+    padding: 30px 25px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.grid-item i { /* For icons - Requires FontAwesome or similar */
+    font-size: 3em;
+    color: #f39c12; /* Accent color */
+    margin-bottom: 20px;
+    display: block; /* Ensure icon takes space */
+}
+
+.grid-item h3 {
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    color: #34495e;
+}
+
+.grid-item p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 3em;
+    }
+    .hero p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: center; /* Center items in mobile */
+    }
+    header .logo {
+        margin-bottom: 15px;
+    }
+    header ul {
+        margin-top: 10px;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0; /* Remove padding */
+    }
+    header ul li {
+        margin-left: 0;
+        margin-bottom: 8px;
+        text-align: center;
+        /* background: #34495e; */ /* Removed background for cleaner look */
+        padding: 0;
+        border-radius: 0;
+    }
+    header ul li a {
+        display: block;
+        border-bottom: none;
+        padding: 10px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 4px;
+    }
+     header ul li a:hover {
+        color: #f39c12;
+        border-bottom: none;
+        background: rgba(255,255,255,0.2);
+    }
+    .language-switcher {
+        margin-top: 15px;
+        align-self: center;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-content div {
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    .footer-content div:last-child {
+        margin-bottom: 0;
+    }
+    .footer-content h3 {
+        display: inline-block;
+        border-bottom: 1px solid #7f8c8d;
+        padding-bottom: 8px;
+    }
+    .footer-content ul {
+        padding-left: 0; /* Remove padding */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 15px; /* Adjust base font size */
+    }
+    header .logo a {
+        font-size: 24px;
+    }
+    main h1 {
+        font-size: 2em;
+    }
+    .content-section h2 {
+        font-size: 1.8em;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 15px;
+        width: 100%; /* Make buttons full width */
+        text-align: center;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"],
+    form textarea {
+        font-size: 16px; /* Easier typing on mobile */
+    }
+    .hero {
+        height: 45vh;
+    }
+     .hero h1 {
+        font-size: 2.2em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+}
+
+
+/* Add styles for responsive images */
+.content-image {
+    display: block;
+    max-width: 100%; /* Ensure image scales down */
+    height: auto; /* Maintain aspect ratio */
+    margin: 30px auto; /* Center image and add vertical space */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.centered-image {
+    max-width: 600px; /* Limit max width for larger centered images */
+}
+
